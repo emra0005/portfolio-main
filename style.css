@@ -144,12 +144,17 @@ a.boks {
 /* OM MIG */
 /* billede og tekst under EMILIE RASMUSSEN */
 .mig img {
-  margin-top: 40px;
+  margin-top: 30px;
   max-width: 70%;
   border-radius: 280px;
 }
 .grid_2-1 {
   text-align: center;
+}
+
+/* jeg hedder emilie jeg er */
+.grid_2-1 p {
+  font-size: 20px;
 }
 
 /* MIN CV SEKTION */
@@ -294,6 +299,33 @@ details {
   }
 }
 
+/* MINE PROJEKTER */
+.reel-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  gap: 38px;
+  align-items: start;
+  margin: 30px;
+}
+.video-wrap {
+  width: 280px; /* <-- GØR DEM MINDRE/HØJERE her */
+  aspect-ratio: 9 / 19.5; /* iPhone-ish */
+  border-radius: 26px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
+  margin: 0 auto; /* centrer i hver kolonne */
+  background: #000;
+}
+
+/* Selve videoen fylder rammen */
+.video-wrap video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
 /* BREAK POINT - MIN DESKTOP VERSION HERFRA*/
 @media (min-width: 768px) {
   /* FORSIDE - desktop */
@@ -369,4 +401,22 @@ details {
   .temaer :hover {
     background-color: #f35197;
   }
+
+  /* jeg hedder emilie jeg er */
+  .grid_2-1 p {
+    font-size: 25px;
+  }
+  .grid_2-1 h2 {
+    font-size: 40px;
+    margin-bottom: 0;
+  }
+
+  /* MINE PROJEKTER */
+  .reel-grid {
+    grid-template-columns: repeat(3, 310px);
+
+    gap: 90px;
+  }
+
+  /* Projekter intro */
 }
