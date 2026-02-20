@@ -1,0 +1,372 @@
+/* Mine fonte */
+
+/* h2 */
+@font-face {
+  font-family: "pop";
+  src: url(fonte/Poppins-SemiBold.ttf);
+}
+
+/* til mine h2 h3 */
+@font-face {
+  font-family: "monoton";
+  src: url(fonte/Monoton-Regular.ttf);
+}
+
+/* til min brødtekst */
+@font-face {
+  font-family: "work-tynd";
+  src: url(fonte/WorkSans-Regular.ttf);
+}
+
+/* Lidt general styling */
+img {
+  max-width: 100%;
+}
+
+body {
+  background-color: #f7f3e2;
+  margin: 0;
+}
+
+h1 {
+  color: #f35197;
+  font-family: "monoton";
+  text-align: center;
+  margin: 10px;
+  font-size: 50px;
+}
+
+h2 {
+  color: #009844;
+  padding: 1.5rem;
+  text-align: center;
+  font-family: "pop";
+  font-size: xx-large;
+}
+
+h3 {
+  color: #f35197;
+  text-align: center;
+  font-family: "pop";
+  font-size: large;
+}
+
+.lilleintro h3 {
+  font-size: small;
+  text-align: center;
+  outline: solid 2px #f35197;
+  padding: 1rem;
+}
+
+p {
+  color: black;
+  font-family: "work-tynd";
+}
+
+/* MOBIL FIIIIIIRRRRRRSSSTTTT */
+/* Husk nu alt herfra og ind til @me gælder KUN op til og med 768px bredde:) */
+
+/* FORSIDE - MOBIL */
+/* min hero section */
+
+.animation {
+  display: flex;
+  justify-content: center;
+  padding: 4rem;
+}
+.portfolio-animation {
+  transform: scale(1.5);
+}
+
+/* Mine site bokse styles og sættes i grid */
+.bokse {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+a.boks {
+  background-color: #fe7f41;
+  color: white;
+  text-align: center;
+  margin-left: 80px;
+  margin-right: 80px;
+  font-family: "pop";
+  font-size: large;
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 60px 20px;
+  box-shadow: 5px 5px 5px grey;
+}
+
+.orange h2 {
+  color: #fe7f41;
+}
+
+/* en personlig tilgang */
+.hvemerjeg {
+  display: grid;
+  grid-template-columns: 1fr;
+  text-align: center;
+  padding-bottom: 50px;
+  background-color: #f35197;
+}
+
+/* mellem "iderig" osv og cta */
+/* skubber knap i bund */
+.mellemrum {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.mellemrum h2 {
+  color: #f7f3e2;
+}
+
+/* styler mine "iderig" "krativ" "nysgerrig" */
+.mellemrum p {
+  display: flex;
+  flex-direction: column;
+  color: #f7f3e2;
+  font-size: 20px;
+  font-weight: bolder;
+  font-family: "work-tynd";
+}
+
+/* En personlig tilgang billede  */
+.hvemerjeg img {
+  margin-top: 80px;
+  max-width: 50%;
+  border-radius: 20px;
+}
+
+/* OM MIG */
+/* billede og tekst under EMILIE RASMUSSEN */
+.mig img {
+  margin-top: 40px;
+  max-width: 70%;
+  border-radius: 280px;
+}
+.grid_2-1 {
+  text-align: center;
+}
+
+/* MIN CV SEKTION */
+.cv {
+  font-family: "pop";
+  color: #f35197;
+  padding: 20px;
+}
+.cv h2 {
+  text-align: start;
+  padding: 0;
+}
+
+/* laver streg under/inddeler (CV) */
+details {
+  border-bottom: 2px solid #f35197;
+  padding: 10px;
+}
+
+/* "OM MIG" og "Tema undersider" - billeder i bunden -mobil */
+.billederække {
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
+  gap: 40px;
+  margin: 40px;
+}
+.billederække img {
+  max-width: 80%;
+  border-radius: 10px;
+}
+
+/* "Mine tema bokse på "projketer" */
+.temaer {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 90px 20px;
+  gap: 50px;
+}
+
+.tema {
+  background-color: #fe7f41;
+  text-align: center;
+  padding: 60px 20px;
+  font-family: "work";
+  font-size: large;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px grey;
+}
+
+.tema a {
+  text-decoration: none;
+  color: #f7f3e2;
+  font-family: "pop";
+  font-size: 30px;
+}
+
+/* KNAPPER */
+.btn {
+  display: inline-block;
+  background-color: #f35197;
+  color: #f7f3e2;
+  text-decoration: none;
+  padding: 10px;
+  font-family: "pop";
+  font-size: large;
+  border-radius: 1rem;
+  box-shadow: 5px 5px 5px grey;
+  text-align: center;
+}
+
+/* min første orange knap */
+.btn1 {
+  display: inline-block;
+  background-color: #fe7f41;
+  color: #f7f3e2;
+  text-decoration: none;
+  padding: 10px;
+  font-family: "pop";
+  font-size: large;
+  border-radius: 1rem;
+  box-shadow: 5px 5px 5px grey;
+  text-align: center;
+}
+
+/* min anden knap på en personlig tilgang */
+.btn2 {
+  display: inline-block;
+  background-color: #f7f3e2;
+  color: #f35197;
+  text-decoration: none;
+  padding: 10px;
+  font-family: "pop";
+  font-size: large;
+  border-radius: 1rem;
+  box-shadow: 5px 5px 5px grey;
+  text-align: center;
+  /* centrerer knappen */
+  margin: 0 auto;
+}
+
+/* Min knap centrerer sig i midten under cv - OM MIG */
+.btn3 {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+}
+/* styler min go back knap  */
+.goback p {
+  display: inline-block;
+  color: #009844;
+  width: 20%;
+  font-size: xx-large;
+  padding-left: 80px;
+}
+
+/* Tema beskrivelse sider */
+/* jeg får mine p'er ind i midten af artiklen */
+.article {
+  max-width: 700px;
+  /* centrer hele containeren så jeg får den i midten*/
+  margin: 0 auto;
+  /* luft fra siderne */
+  padding: 0 2rem;
+}
+.article p {
+  /* mellemrum mellem mine p'er */
+  margin-bottom: 1.2rem;
+  line-height: 1.6;
+}
+
+/* får mit billede af mig på "om mig" til at fade langsomt ind */
+.fadeIn {
+  animation: fadeIn 1s linear;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* BREAK POINT - MIN DESKTOP VERSION HERFRA*/
+@media (min-width: 768px) {
+  /* FORSIDE - desktop */
+
+  h1 {
+    font-size: 100px;
+  }
+
+  .lilleintro h3 {
+    font-size: large;
+  }
+
+  /* Jeg sætter mine bokse på forsiden i grid til desktop version */
+  .bokse {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+  a.boks {
+    font-size: x-large;
+  }
+  .bokse :hover {
+    background-color: #f35197;
+  }
+
+  /* En personlig tilgang DESKTOP*/
+  .hvemerjeg {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* OM MIG - desktop */
+  /* "EMILIE RASMUSSEN" grid_2-1 section - på "OM MIG" */
+
+  .grid_2-1 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  /* MIN CV SEKTION */
+  .cv {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  /* Styler mit kæææmpe navn på på "OM MIG*/
+  h5 {
+    font-size: 100px;
+  }
+
+  /* min billerække på "om mig" og "tema undersiderne" */
+  .billederække {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    place-items: center;
+  }
+  .billederække img {
+    max-width: 100%;
+  }
+
+  /* Projekt - desktop */
+  /* Mine temaer på projekt siden ændres i grid */
+
+  .temaer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    padding: 40px;
+    text-align: center;
+  }
+  .temaer :hover {
+    background-color: #f35197;
+  }
+}

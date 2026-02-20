@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="img/nyny.svg" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="img/nyny.svg" />
+    <link rel="shortcut icon" href="img/nyny.svg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="img/nyny.svg" />
+
+    <!-- får min footer ikoner til at virke -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <title>Om mig</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="layout.css" />
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="footer.css" />
+  </head>
+
+  <body>
+    <!--jeg inkludere min header med JavaScript -->
+    <div id="header"></div>
+
+    <script>
+      fetch("header.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("header").innerHTML = data;
+        });
+    </script>
+    <main>
+      <!-- mit navn her -->
+      <section>
+        <h1>EMILIE RASMUSSEN</h1>
+      </section>
+      <!-- Hej og billede -->
+      <section class="grid_2-1">
+        <div>
+          <h2>Heeeejjj</h2>
+          <p>
+            Jeg hedder Emilie, er 22 år og opvokset i Helsingør. <br />
+            <br />
+            Det meste af min barndom har jeg tilbragt i en håndboldhal, jeg har
+            altid været en teamplayer, der trives bedst i fællesskaber. <br />
+            <br />
+            Jeg nyder at være social, møde nye mennesker og udfordre mig selv.
+            <br />
+            <br />Kreativitet har altid fyldt meget hos mig, og jeg elsker at få
+            idéer og gøre dem til virkelighed. <br />
+            <br />Netop derfor valgte jeg at læse multimediedesign - her kan jeg
+            kombinere det kreative med nye udfordringer og udvikle mig hele
+            tiden.
+          </p>
+          <br />
+        </div>
+        <div class="fadeIn">
+          <div class="mig">
+            <img src="img/seejpink.webp" alt="billede" />
+          </div>
+        </div>
+      </section>
+
+      <section class="cv">
+        <h2>CV</h2>
+        <details>
+          <summary>Udannelse</summary>
+          <p>2025 - 2027 | Multimediedesign | KEA Københavns Erhvervsakademi</p>
+          <p>
+            2023 - 2024 | Ennegrammets grunduddannelse | Enneagramstedet
+            Roskilde
+          </p>
+          <p>
+            2020 - 2022 | HF m. Mat/Erhversøkonomi som hovedfag | Espegærde
+            gymnasium
+          </p>
+          <p>2017 - 2018 | Gel nail polish full course | The Gel Bottle</p>
+        </details>
+
+        <details>
+          <summary>Arbejde</summary>
+          <p>
+            2018 - 2025 | Selvstændig negleteknikker | Konaktepenails Helsingør
+          </p>
+          <p>
+            2023 - 2024 | Pædagogmedhjælper | Nygaard special skole Helsingør
+          </p>
+          <p>2021 - 2022 | Service medarbejder | Mcdonalds Helsingør</p>
+        </details>
+
+        <details>
+          <summary>Kompetencer</summary>
+          <p>Første semester på KEA har givet mig kompetencer i:</p>
+          <p>-Adobe pakken | Creative cloud | Figma</p>
+          <p>-HTML, CSS, Github & JavaScript</p>
+          <p>-Idegenerering & designprincipper</p>
+          <p>-Fotografi & billederedigering</p>
+          <p>-Infografik & skitseringsteknikker</p>
+          <p>-Redesign af hjemmeside</p>
+        </details>
+      </section>
+
+      <section>
+        <div class="btn3">
+          <a class="btn" href="projekter.html">SE MIT FORLØB &rarr;</a>
+        </div>
+        <br />
+      </section>
+      <section>
+        <div class="billederække">
+          <img src="img/solnedgang.webp" alt="billede 1" />
+          <img src="img/tomba.webp" alt="billede 2" />
+          <img src="img/bali.webp" alt="billede 3" />
+          <img src="img/plantorama.webp" alt="billede 4" />
+        </div>
+        <br />
+      </section>
+    </main>
+    <footer>
+      <p>
+        <a
+          href="https://www.facebook.com/profile.php?id=100009255955648"
+          target="_blank"
+        >
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.instagram.com/emiliemrasmussen/" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </p>
+
+      <p>Copyright © 2025 Emilie Rasmussen</p>
+    </footer>
+
+    <!-- burgermenu  -->
+    <script>
+      function toggleMenu() {
+        const menu = document.getElementById("nav-links");
+        menu.classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>

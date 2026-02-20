@@ -1,0 +1,21 @@
+footer {
+  background-color: #009844;
+  text-align: center;
+  padding: 20px;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+footer p {
+  color: #f7f3e2;
+}
+
+a i {
+  font-size: 30px;
+  color: #f7f3e2;
+  margin: 10px;
+}
+
+a:hover i {
+  color: #f35197; /* hover effekt */
+}

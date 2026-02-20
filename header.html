@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navigations menu</title>
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="index.html" />
+  </head>
+  <body>
+    <header>
+      <nav class="menubar">
+        <div class="slideIn">
+          <div class="logo">
+            <img src="img/mitlogo.svg" alt="Logo" />
+          </div>
+        </div>
+        <!-- jeg laver min burger klik -->
+        <button class="burger" onclick="toggleMenu()">=</button>
+        <!-- jeg giver en id eller class her så jeg kan vise/skjule menuen med js -->
+        <ul id="nav-links">
+          <li><a href="index.html">FORSIDE</a></li>
+          <li><a href="ommig.html">OM MIG</a></li>
+          <li><a href="projekter.html">PROJEKTER</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- togglemenu aktiveres når jeg klikker på burgerknappen, så den tilføjer ligesom eller fjerner klassen active som i mit css styrer om menuen skal vises -->
+    <script>
+      function toggleMenu() {
+        const menu = document.getElementById("nav-links");
+        menu.classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>

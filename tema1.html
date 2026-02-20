@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="img/nyny.svg" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="img/nyny.svg" />
+    <link rel="shortcut icon" href="img/nyny.svg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="img/nyny.svg" />
+
+    <!-- får min footer ikoner til at virke -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <title>Tema 1</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="footer.css" />
+  </head>
+
+  <body>
+    <!--jeg inkludere min header med JavaScript -->
+    <div id="header"></div>
+
+    <script>
+      fetch("header.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("header").innerHTML = data;
+        });
+    </script>
+    <main>
+      <section>
+        <h2>INTROUGE</h2>
+        <a class="goback" href="projekter.html"><p>&larr;</p></a>
+        <!-- <button onclick="history.back()">Go Back</button> -->
+
+        <article class="article">
+          <!-- min tema beskrivelse -->
+          <h3>Figma og Imovie</h3>
+          <!-- min tekst / læring fra temaet -->
+          <p>
+            Jeg lærte at arbejde med design i Figma og hvordan man overfører
+            filer via FileZilla til eget domæne.
+          </p>
+          <p>Derudover arbejdede jeg med videoredigering i iMovie.</p>
+          <p>
+            Jeg fik styr på strukturering af digitale projekter og grundlæggende
+            publicering af websites.
+          </p>
+        </article>
+
+        <!-- mine link til mine projekter på de forskellige temaer -->
+        <div class="btn3">
+          <a class="btn" href="https://www.youtube.com/watch?v=3ysjAO1DG5o"
+            >Imovie video &rarr;</a
+          >
+        </div>
+
+        <div class="btn3">
+          <a
+            class="btn"
+            href=" https://www.figma.com/board/C5KrlQsKA7wHL02UXjBhHK/Pr%C3%A6sentationskort?node-id=0-1&t=7DRtIyx3wrkL1vkn-1"
+            >Præsentationskort &rarr;</a
+          >
+        </div>
+        <br />
+      </section>
+    </main>
+    <footer>
+      <p>
+        <a
+          href="https://www.facebook.com/profile.php?id=100009255955648"
+          target="_blank"
+        >
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.instagram.com/emiliemrasmussen/" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </p>
+
+      <p>Copyright © 2025 Emilie Rasmussen</p>
+    </footer>
+
+    <!-- burgermenu  -->
+    <script>
+      function toggleMenu() {
+        const menu = document.getElementById("nav-links");
+        menu.classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>

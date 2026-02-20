@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="img/nyny.svg" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="img/nyny.svg" />
+    <link rel="shortcut icon" href="img/nyny.svg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="img/nyny.svg" />
+
+    <!-- får min footer ikoner til at virke -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <title>Forside</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="layout.css" />
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="footer.css" />
+  </head>
+
+  <body>
+    <!--jeg inkludere min header med JavaScript -->
+    <div id="header"></div>
+    <script>
+      fetch("header.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("header").innerHTML = data;
+        });
+    </script>
+    <main>
+      <!-- her skal min forside/hero sektion være -->
+      <!-- <section class="forside">
+        <h1>PORTFOLIO</h1>
+      </section> -->
+      <section class="animation">
+        <script
+          src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+          type="module"
+        ></script>
+        <dotlottie-player
+          class="portfolio-animation"
+          src="https://lottie.host/9ad02c41-f96d-47b6-b4f8-68765a1418ac/J6MCK5mc5H.lottie"
+          background="transparent"
+          speed="1"
+          style="width: 1000px; height: auto"
+          loop
+          autoplay
+        ></dotlottie-player>
+      </section>
+
+      <section class="lilleintro">
+        <br />
+        <br />
+        <h3>
+          Få indblik i min læring på Multimediedesign - og lær mig bedre at
+          kende.
+        </h3>
+      </section>
+
+      <!-- h2 overskrift -->
+      <section>
+        <div class="orange">
+          <h2>SE MINE SITES</h2>
+        </div>
+      </section>
+
+      <!-- her skal være link til mine sites -->
+      <section class="bokse">
+        <a href="https://emilierasmussen.dk/website/index.html" class="boks"
+          >FØRSTE SITE</a
+        >
+        <a
+          href=" https://emilierasmussen.dk/konaktepenails/index.html"
+          class="boks"
+          >EMNE SITE</a
+        >
+        <a
+          href=" http://emilierasmussen.dk/emergency-main/instruction.html"
+          class="boks"
+          >EMERGENCY SITE</a
+        >
+        <a
+          href="http://emilierasmussen.dk/virksomhedssite-main/index.html"
+          class="boks"
+          >VIRKSOMHEDS SITE</a
+        >
+      </section>
+      <section>
+        <br />
+        <div class="btn3">
+          <a class="btn1" href="projekter.html">MIN PROCES &rarr;</a>
+        </div>
+        <br />
+      </section>
+
+      <section>
+        <div class="hvemerjeg">
+          <div class="mellemrum">
+            <h2>En personlig tilgang</h2>
+            <p>Iderig</p>
+            <p>Kreativ</p>
+            <p>Nysgerrig</p>
+            <a class="btn2" href="ommig.html">LÆR MIG AT KENDE &rarr;</a>
+          </div>
+          <div><img src="img/pc.webp" alt="Emilie" /></div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>
+        <a
+          href="https://www.facebook.com/profile.php?id=100009255955648"
+          target="_blank"
+        >
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.instagram.com/emiliemrasmussen/" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </p>
+      <p>Copyright © 2025 Emilie Rasmussen</p>
+    </footer>
+    <!-- burgermenu  -->
+    <script>
+      function toggleMenu() {
+        const menu = document.getElementById("nav-links");
+        menu.classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>

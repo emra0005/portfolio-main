@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="img/nyny.svg" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="img/nyny.svg" />
+    <link rel="shortcut icon" href="img/nyny.svg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="img/nyny.svg" />
+
+    <!-- får min footer ikoner til at virke -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <title>Tema 5</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="footer.css" />
+  </head>
+
+  <body>
+    <!--jeg inkludere min header med JavaScript -->
+    <div id="header"></div>
+
+    <script>
+      fetch("header.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("header").innerHTML = data;
+        });
+    </script>
+    <main>
+      <section>
+        <h2>GRUNDLÆGGENDE INDHOLD</h2>
+        <!-- min knap tilbage -->
+        <a class="goback" href="projekter.html"><p>&larr;</p></a>
+
+        <article class="article">
+          <!-- min tema beskrivelse -->
+          <h3>Visuel redigering og redesign</h3>
+          <!-- min tekst / læring fra temaet -->
+          <p>
+            Jeg arbejdede med Photoshop og After Effects og brugte LottieFiles
+            til animationer.
+          </p>
+          <p>
+            Jeg lærte om heuristisk test, fotografi, billedredigering og
+            beskæring.
+          </p>
+          <p>
+            Jeg brugte GitHub i gruppearbejde og trænede præsentationsteknik.
+          </p>
+          <p>
+            Temaet sluttede med redesign af en hjemmeside, hvor jeg både lærte
+            at arbejde i gruppe konstellationer samt samarbejde med en anden
+            "rigtig" case og at tilpasse et design herefter.
+          </p>
+        </article>
+
+        <!-- mine link til mine projekter på de forskellige temaer -->
+        <div class="btn3">
+          <a
+            class="btn"
+            href=" http://emilierasmussen.dk/virksomhedssite-main/index.html"
+            >Virksomhedssite &rarr;</a
+          >
+        </div>
+
+        <div class="btn3">
+          <a
+            class="btn"
+            href="https://www.figma.com/design/XLBPrhYr3Kd50GRenQf4EK/Tema5---Virksomhedssite?node-id=0-1&t=o2CkCEIUlO4clh3F-1"
+            >Se vores proces &rarr;</a
+          >
+        </div>
+        <br />
+      </section>
+      <section>
+        <div class="billederække">
+          <img src="img/virksomhed1.webp" alt="billede 1" />
+          <img src="img/virksomhed2.webp" alt="billede 2" />
+          <img src="img/virksomhed3.webp" alt="billede 3" />
+          <img src="img/virksomhed4.webp" alt="billede 4" />
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>
+        <a
+          href="https://www.facebook.com/profile.php?id=100009255955648"
+          target="_blank"
+        >
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.instagram.com/emiliemrasmussen/" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </p>
+
+      <p>Copyright © 2025 Emilie Rasmussen</p>
+    </footer>
+
+    <!-- burgermenu  -->
+    <script>
+      function toggleMenu() {
+        const menu = document.getElementById("nav-links");
+        menu.classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>

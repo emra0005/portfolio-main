@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="img/nyny.svg" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="img/nyny.svg" />
+    <link rel="shortcut icon" href="img/nyny.svg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="img/nyny.svg" />
+
+    <!-- får min footer ikoner til at virke -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <title>Tema 4</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="footer.css" />
+  </head>
+
+  <body>
+    <!--jeg inkludere min header med JavaScript -->
+    <div id="header"></div>
+
+    <script>
+      fetch("header.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("header").innerHTML = data;
+        });
+    </script>
+    <main>
+      <section>
+        <h2>GRUNDLÆGGENDE ANIMATION</h2>
+        <!-- min knap tilbage -->
+        <a class="goback" href="projekter.html"><p>&larr;</p></a>
+
+        <article class="article">
+          <!-- min tema beskrivelse -->
+          <h3>Infografik og JavaScript</h3>
+          <!-- min tekst / læring fra temaet -->
+          <p>
+            I tema 4 lærte jeg at lave infografik med SVG og arbejde med
+            vektorgrafik.
+          </p>
+          <p>Jeg brugte papirskitser og lavede simple paper prototypes.</p>
+          <p>
+            Jeg blev introduceret og arbejde med JavaScript med funktioner og
+            events
+          </p>
+          <p>Jeg lavede HTML-forms og arbejdede med dark/light mode.</p>
+        </article>
+
+        <!-- mine link til mine projekter på de forskellige temaer -->
+        <div class="btn3">
+          <a
+            class="btn"
+            href="http://emilierasmussen.dk/emergency-main/instruction.html"
+            >Emergency site &rarr;</a
+          >
+        </div>
+
+        <div class="btn3">
+          <a
+            class="btn"
+            href="https://www.figma.com/design/jIAjpdMsT01CxDp3sQWUec/D%C3%B8delige-parasitter-florerer-i-hundeg%C3%A5rde?node-id=0-1&t=MZ5erZMPIS1N4HuY-1"
+            >Se min proces &rarr;</a
+          >
+        </div>
+        <br />
+      </section>
+
+      <section>
+        <div class="billederække">
+          <img src="img/emergency1.webp" alt="billede 1" />
+          <img src="img/emergency2.webp" alt="billede 2" />
+          <img src="img/emergency3.webp" alt="billede 3" />
+          <img src="img/emergenzy4.webp" alt="billede 4" />
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>
+        <a
+          href="https://www.facebook.com/profile.php?id=100009255955648"
+          target="_blank"
+        >
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.instagram.com/emiliemrasmussen/" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </p>
+
+      <p>Copyright © 2025 Emilie Rasmussen</p>
+    </footer>
+
+    <!-- burgermenu  -->
+    <script>
+      function toggleMenu() {
+        const menu = document.getElementById("nav-links");
+        menu.classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>

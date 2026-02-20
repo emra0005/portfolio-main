@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="img/nyny.svg" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="img/nyny.svg" />
+    <link rel="shortcut icon" href="img/nyny.svg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="img/nyny.svg" />
+    <!-- får min footer ikoner til at virke -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <title>Projekter</title>
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="footer.css" />
+  </head>
+
+  <body>
+    <!--jeg inkludere min header med JavaScript -->
+    <div id="header"></div>
+
+    <script>
+      fetch("header.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("header").innerHTML = data;
+        });
+    </script>
+    <main>
+      <section><h1>PROJEKTER</h1></section>
+      <section>
+        <h3>
+          Udforsk og følg med i min læring på <br />
+          mit første semester på MMD
+        </h3>
+        <br />
+      </section>
+
+      <!-- her skal mine temaer være -->
+      <section class="temaer">
+        <div class="tema">
+          <a href="tema1.html">TEMA 1</a>
+        </div>
+        <div class="tema">
+          <a href="tema2.html">TEMA 2</a>
+        </div>
+
+        <div class="tema">
+          <a href="tema3.html">TEMA 3</a>
+        </div>
+        <div class="tema">
+          <a href="tema4.html">TEMA 4</a>
+        </div>
+        <div class="tema">
+          <a href="tema5.html">TEMA 5</a>
+        </div>
+        <div class="tema">
+          <a href="tema6.html">TEMA 6</a>
+        </div>
+      </section>
+
+      <section>
+        <div class="btn3">
+          <a class="btn" href="ommig.html">LIDT OM MIG &rarr;</a>
+        </div>
+        <br />
+      </section>
+    </main>
+    <footer>
+      <p>
+        <a
+          href="https://www.facebook.com/profile.php?id=100009255955648"
+          target="_blank"
+        >
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.instagram.com/emiliemrasmussen/" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </p>
+
+      <p>Copyright © 2025 Emilie Rasmussen</p>
+    </footer>
+
+    <!-- burgermenu  -->
+    <script>
+      function toggleMenu() {
+        const menu = document.getElementById("nav-links");
+        menu.classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,95 @@
+/* Jeg styler min header så den ser pæn ud */
+@font-face {
+  font-family: "pop";
+  src: url(fonte/Poppins-SemiBold.ttf);
+}
+
+/* jeg får mit logo til at slide in */
+.slideIn {
+  animation: slideIn 0.5s linear;
+}
+@keyframes slideIn {
+  from {
+    transform: translate(-100%, 0);
+  }
+  to {
+    transform: translate(0, 0);
+  }
+}
+
+.menubar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2;
+  margin: 1.5rem;
+  background-color: #f7f3e2;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+  gap: 2rem;
+  padding-right: 2rem;
+}
+
+ul li a {
+  text-decoration: none;
+  font-family: "pop";
+  font-size: large;
+  font-weight: bold;
+  color: #009844;
+  transition: all 0.3s ease-out;
+}
+
+ul li a:hover {
+  color: #f35197;
+}
+
+/* Logo */
+/* jeg tilpasser mit logo mangler */
+.logo img {
+  max-width: 10%;
+  margin: 20px;
+  margin-left: 20px;
+}
+
+/* så jeg kan styre mobil layoutet og burgermenuen her */
+
+.burger {
+  /* menuen skjules "display none"  */
+  display: none;
+  font-size: 4rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #009844;
+  /* skubber burgerknap helt til højre */
+  margin-left: auto;
+}
+
+@media (max-width: 768px) {
+  .burger {
+    display: block;
+  }
+  #nav-links {
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+    align-items: flex-end;
+  }
+  /* menuen vises med active */
+  #nav-links.active {
+    display: flex;
+  }
+
+  .menubar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo img {
+    max-width: 10%;
+  }
+}
